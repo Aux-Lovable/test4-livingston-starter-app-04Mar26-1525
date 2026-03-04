@@ -8,18 +8,15 @@ import Col from 'react-bootstrap/Col';
 import RecentClearancesCard from '@/components/cards/RecentClearancesCard/RecentClearancesCard';
 import { SpringboardCards } from './SpringboardCards';
 import { CallToAction } from './CallToAction';
-import { Header } from './Header';
+import Header from './Header';
 import { CounterCards } from './CounterCards';
-import { useTranslation } from '@/utils/hooks/useTranslation';
 
 export const Dashboard = () => {
-    const translate = useTranslation();
-
     return (
         <Container fluid className='mb-4'>
             <Row>
                 <Col>
-                    <Header title={translate('dashboardTitle')} />
+                    <Header />
                 </Col>
             </Row>
             <Row>
