@@ -1,9 +1,3 @@
-/**
- * This component represents the header section of the dashboard page. It displays the title of the dashboard along with an icon.
- * The header is styled to be visually appealing and provides a clear indication of the page's purpose. The icon used in the header is a house chimney, which symbolizes a home or dashboard.
- * The component accepts a title prop to dynamically set the header text.
- */
-
 import { faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
@@ -14,7 +8,7 @@ const Header: React.FC = () => (
             <span className='badge badge-circular badge-info me-3'>
                 <FontAwesomeIcon icon={faHouseChimney as IconDefinition} />
             </span>
-            <h1 className='mb-0'>My Livingston Invoices</h1>
+            <h1 className='mb-0'>Livingston Dashboard</h1>
         </div>
     </div>
 );
