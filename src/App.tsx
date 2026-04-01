@@ -1,8 +1,3 @@
-/**
- * This file defines the main application routes and their corresponding components. It uses React Router to create a browser router with a nested route structure, including layouts
- * for authentication and the main application. The routes cover various paths such as the dashboard, support FAQs, and authentication callbacks. An error element is also defined
- * to handle any routing errors gracefully.
- */
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router';
 import RootLayout from '@/page-structure/layouts/RootLayout';
 import AuthLayout from '@/page-structure/layouts/AuthLayout';
@@ -13,6 +8,7 @@ import { Faqs } from '@/pages/Faqs';
 import Logout from '@/components/authentication/Logout';
 import { LandingPage } from '@/pages/LandingPage';
 import ErrorPage from './components/ErrorPage';
+import { FormPage } from '@/pages/FormPage';
 
 const router = createBrowserRouter([
     {
@@ -52,6 +48,7 @@ const router = createBrowserRouter([
                             }
                         ]
                     },
+                    { path: 'form', element: <FormPage /> },
                     { path: '*', element: <NotFound /> }
                 ]
             }
