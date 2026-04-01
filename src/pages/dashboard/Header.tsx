@@ -8,7 +8,7 @@ const Header: React.FC = () => (
             <span className='badge badge-circular badge-info me-3'>
                 <FontAwesomeIcon icon={faHouseChimney as IconDefinition} />
             </span>
-            <h1 className='mb-0'>Hello World</h1>
+            <h1 className='mb-0'>My Invoices</h1>
         </div>
     </div>
 );
